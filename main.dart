@@ -29,5 +29,13 @@ main(){
     print('License nh banega');
   }
 
+
+  double num4 = 234.3432;
+  int number = 344;
+
+  print(number);
+  print(num4);
+
+
    
 }
