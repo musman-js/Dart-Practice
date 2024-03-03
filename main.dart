@@ -42,6 +42,28 @@ main(){
   // }
 
 
+  //Email Password 
+  var email  = "usman2037966@gmail.com";
+  var pass  = "abc123";
+  var userEmail = "usman2037966@gmail.com";
+  var userPass =  "abc123";
+  if(userEmail == email){
+    if(userPass == pass){
+      print("Login Successful!");
+    }
+  }
+  else{
+    if(userEmail!= email && userPass == pass){
+      print('Email Wrong');
+    }
+    else if(userEmail == email && userPass != pass ){
+      print("Wrong Password");
+    }
+    else{
+      print("Both Wrong");
+    }
+  }
+
 
 
 
