@@ -43,26 +43,50 @@ main(){
 
 
   //Email Password 
-  var email  = "usman2037966@gmail.com";
-  var pass  = "abc123";
-  var userEmail = "usman2037966@gmail.com";
-  var userPass =  "abc123";
-  if(userEmail == email){
-    if(userPass == pass){
-      print("Login Successful!");
-    }
-  }
-  else{
-    if(userEmail!= email && userPass == pass){
-      print('Email Wrong');
-    }
-    else if(userEmail == email && userPass != pass ){
-      print("Wrong Password");
-    }
-    else{
-      print("Both Wrong");
-    }
-  }
+  // var email  = "usman2037966@gmail.com";
+  // var pass  = "abc123";
+  // var userEmail = "usman2037966@gmail.com";
+  // var userPass =  "abc123";
+  // if(userEmail == email){
+  //   if(userPass == pass){
+  //     print("Login Successful!");
+  //   }
+  // }
+  // else{
+  //   if(userEmail!= email && userPass == pass){
+  //     print('Email Wrong');
+  //   }
+  //   else if(userEmail == email && userPass != pass ){
+  //     print("Wrong Password");
+  //   }
+  //   else{
+  //     print("Both Wrong");
+  //   }
+  // }
+
+
+
+
+// var usmanChoice = "Flutter & MERN Stack Developer";
+// int age = 17;
+// int laibaAge = 17;
+// var career = "Flutter & MERN Stack Developer";
+// var Love = "Laiba";
+// if(usmanChoice == Love){
+//   print("Usman Barbar");
+// }
+// else if(usmanChoice == career){
+//    print("Usman Pesa kamaye ga");
+// }
+// else {
+//  if(age == laibaAge)
+// {
+//   print("Usman Shadi krskta he");
+// }
+// else{
+//    print("Usman Barbar or Uske pass pese nh!");
+// }
+// }
 
 
 
