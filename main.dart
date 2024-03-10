@@ -1,5 +1,18 @@
 
 main(){
+
+//List Methods Pracitce
+List city = ["Karachi","islamabad","lahore",'peshawar'];
+print(city.length);
+print(city.indexOf("Karachi"));
+print(city.reversed);
+print(city.last);
+print(city.remove(city[0]));
+print(city.removeAt(1));
+
+
+
+
   // num percent = 56;
   // if(percent >=80 && percent<=100){
   //   print("A+");
