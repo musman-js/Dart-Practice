@@ -11,6 +11,20 @@ print(city.remove(city[0]));
 print(city.removeAt(1));
 
 
+int age = 10;
+List cities = ["Karachi","Islamabad","Lahore"];
+if(age >=15){
+  print(cities[0]);
+}
+
+else if(age <= 10){
+  print(cities[1]);
+}
+else{
+  print("Jana cancel!");
+}
+
+
 
 
   // num percent = 56;
