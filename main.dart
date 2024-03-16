@@ -2,27 +2,44 @@
 main(){
 
 //List Methods Pracitce
-List city = ["Karachi","islamabad","lahore",'peshawar'];
-print(city.length);
-print(city.indexOf("Karachi"));
-print(city.reversed);
-print(city.last);
-print(city.remove(city[0]));
-print(city.removeAt(1));
+// List city = ["Karachi","islamabad","lahore",'peshawar'];
+// print(city.length);
+// print(city.indexOf("Karachi"));
+// print(city.reversed);
+// print(city.last);
+// print(city.remove(city[0]));
+// print(city.removeAt(1));
 
 
-int age = 10;
-List cities = ["Karachi","Islamabad","Lahore"];
-if(age >=15){
-  print(cities[0]);
-}
+// int age = 10;
+// List cities = ["Karachi","Islamabad","Lahore"];
+// if(age >=15){
+//   print(cities[0]);
+// }
 
-else if(age <= 10){
-  print(cities[1]);
-}
-else{
-  print("Jana cancel!");
-}
+// else if(age <= 10){
+//   print(cities[1]);
+// }
+// else{
+//   print("Jana cancel!");
+// }
+
+
+//Map Practice
+// Map name = {
+//   "name": "Muhammad Usman",
+//   "age":17,
+//   "education" : {
+//     "school ": "Metropolis Education" ,
+//     "Collage": "Shipowner's"
+
+//   }
+// };
+
+// print(name);
+// print(name.keys);
+// print(name.length);
+// print(name["age"]);
 
 
 
