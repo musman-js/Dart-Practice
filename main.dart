@@ -1,5 +1,28 @@
-
 main(){
+
+// for(var i = 1; i<=10 ; i++){
+//   print("2 x ${i} = ${2*i}");
+// }
+
+
+// ====For in Loop===
+// List names = [
+//   {
+//  "name":"Muhammad Usman",
+//   "age": 17,
+//   "email": "usman2037966@gmail.com"
+//   },
+//   {
+//  "name":"Muhammad Ammar",
+//   "age": 17,
+//   "email": "ammar203@gmail.com"
+//   }
+// ];
+
+// for(var i in names){
+//   print(i["name"]);
+// }
+
 
 //List Methods Pracitce
 // List city = ["Karachi","islamabad","lahore",'peshawar'];
