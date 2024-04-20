@@ -1,5 +1,30 @@
 main(){
 
+
+// *****List Method Revision  (4-21-2024)******
+List names = ["Usman","ammar","ayaan","konain"];
+List number = [6,213,4324,134];
+names.removeWhere((element) => (element == "Usman"));
+names.removeAt(3);
+names.addAll(["shamir","usama"]);
+names.clear();
+number.sort();
+print(number);
+print(names);
+
+
+Map name = {
+  "name": "Muhammad Usman Khan",
+  "age": 17,
+  "education": "Metropolis Education",
+  // "love": "Pesa"
+};
+name["mobile"]  = "Tecno Pova 2";
+name.putIfAbsent("love", ()=> "Money");
+print(name);
+
+
+
 // for(var i = 1; i<=10 ; i++){
 //   print("2 x ${i} = ${2*i}");
 // }
@@ -154,11 +179,6 @@ main(){
 //    print("Usman Barbar or Uske pass pese nh!");
 // }
 // }
-
-
-
-
-
 
    
 }
