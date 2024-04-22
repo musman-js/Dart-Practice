@@ -1,27 +1,29 @@
+import 'dart:io';
+
 main(){
 
 
 // *****List Method Revision  (4-21-2024)******
-List names = ["Usman","ammar","ayaan","konain"];
-List number = [6,213,4324,134];
-names.removeWhere((element) => (element == "Usman"));
-names.removeAt(3);
-names.addAll(["shamir","usama"]);
-names.clear();
-number.sort();
-print(number);
-print(names);
+// List names = ["Usman","ammar","ayaan","konain"];
+// List number = [6,213,4324,134];
+// names.removeWhere((element) => (element == "Usman"));
+// names.removeAt(3);
+// names.addAll(["shamir","usama"]);
+// names.clear();
+// number.sort();
+// print(number);
+// print(names);
 
 
-Map name = {
-  "name": "Muhammad Usman Khan",
-  "age": 17,
-  "education": "Metropolis Education",
-  // "love": "Pesa"
-};
-name["mobile"]  = "Tecno Pova 2";
-name.putIfAbsent("love", ()=> "Money");
-print(name);
+// Map name = {
+//   "name": "Muhammad Usman Khan",
+//   "age": 17,
+//   "education": "Metropolis Education",
+//   // "love": "Pesa"
+// };
+// name["mobile"]  = "Tecno Pova 2";
+// name.putIfAbsent("love", ()=> "Money");
+// print(name);
 
 
 
@@ -179,6 +181,34 @@ print(name);
 //    print("Usman Barbar or Uske pass pese nh!");
 // }
 // }
+
+
+
+
+// ***********A simple login code in which 5 times try are given to user***************
+var name = "Muhammad Usman";
+var pass = '12345';
+var attempt = 4;
+
+var i = 0;
+while(i<= attempt){
+  var userName = stdin.readLineSync();
+  print('User Name : $userName ');
+  var userPass = stdin.readLineSync();
+  print(' User Password : $userPass');
+  i++;
+  
+  if(userName == name && userPass == pass){
+      print("Login"); 
+      break;
+  }
+
+  if(i>attempt){
+    print("Accound Banned");
+  }
+}
+
+
 
    
 }
