@@ -1,6 +1,6 @@
 import 'dart:io';
 
-main(){
+ void  main(){
 
 
 // *****List Method Revision  (4-21-2024)******
@@ -186,29 +186,57 @@ main(){
 
 
 // ***********A simple login code in which 5 times try are given to user***************
-var name = "Muhammad Usman";
-var pass = '12345';
-var attempt = 4;
+// var name = "Muhammad Usman";
+// var pass = '12345';
+// var attempt = 4;
 
-var i = 0;
-while(i<= attempt){
-  var userName = stdin.readLineSync();
-  print('User Name : $userName ');
-  var userPass = stdin.readLineSync();
-  print(' User Password : $userPass');
-  i++;
+// var i = 0;
+// while(i<= attempt){
+//   var userName = stdin.readLineSync();
+//   print('User Name : $userName ');
+//   var userPass = stdin.readLineSync();
+//   print(' User Password : $userPass');
+//   i++;
   
-  if(userName == name && userPass == pass){
-      print("Login"); 
-      break;
-  }
+//   if(userName == name && userPass == pass){
+//       print("Login"); 
+//       break;
+//   }
 
-  if(i>attempt){
-    print("Accound Banned");
-  }
+//   if(i>attempt){
+//     print("Accound Banned");
+//   }
+// }
+
+
+
+// **********Null Safety practice************
+var order = foodpanda(name: 'pizza');
+print(order);
+
+
+var userMarksheet = marksheet();
+print(userMarksheet);
+
+
+
 }
 
 
 
-   
+foodpanda({String? name}){
+  print('Order dispatched');
+  var orderName = name ?? 'no name is given';
+  return orderName;
+}
+
+
+marksheet( {double? obtain , double total = 150}){
+  if(obtain == null || total == 0){
+    print("Error");
+    return 0.0;
+  }
+   double percent = (obtain / total)*100 ;
+   return percent;
+
 }
