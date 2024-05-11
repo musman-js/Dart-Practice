@@ -211,32 +211,47 @@ import 'dart:io';
 
 
 // **********Null Safety practice************
-var order = foodpanda(name: 'pizza');
-print(order);
+// var order = foodpanda(name: 'pizza');
+// print(order);
 
 
-var userMarksheet = marksheet();
-print(userMarksheet);
+// var userMarksheet = marksheet();
+// print(userMarksheet);
 
 
 
+// }
+
+
+
+// foodpanda({String? name}){
+//   print('Order dispatched');
+//   var orderName = name ?? 'no name is given';
+//   return orderName;
+
+
+
+ var userData = name(name: 'Muhammad Usman' , lastName: 'Khan' ,age:17 );
+ print(userData);
+
+}
+
+
+name({ String? name , String? lastName , int? age }){
+   
+   String info = name ?? 'Not found';
+   String last = lastName ?? 'Not found';
+    dynamic userAge  = age ?? 'Not given' ;
+
+    return (info , last , userAge);
 }
 
 
-
-foodpanda({String? name}){
-  print('Order dispatched');
-  var orderName = name ?? 'no name is given';
-  return orderName;
-}
-
-
-marksheet( {double? obtain , double total = 150}){
-  if(obtain == null || total == 0){
-    print("Error");
-    return 0.0;
-  }
-   double percent = (obtain / total)*100 ;
-   return percent;
-
-}
+// marksheet( {double? obtain , double total = 150}){
+//   if(obtain == null || total == 0){
+//     print("Error");
+//     return 0.0;
+//   }
+//    double percent = (obtain / total)*100 ;
+//    return percent; 
+// }
