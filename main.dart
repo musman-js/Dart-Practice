@@ -231,20 +231,45 @@ import 'dart:io';
 
 
 
- var userData = name(name: 'Muhammad Usman' , lastName: 'Khan' ,age:17 );
- print(userData);
+//  var userData = name(name: 'Muhammad Usman' , lastName: 'Khan' ,age:17 );
+//  print(userData);
+
+
+
+
+  // *******OOP**********
+  var userInfo = user();
+  print(userInfo.name);
+  print(userInfo.lastName);
+
+ ApiData api = ApiData();
+ print(api.name);
 
 }
 
+// ************OOP************
+class user{
+   var name  = 'Muhammad Usman';
+   var lastName = 'khan';
+   var age = 17;
+   var education = 'Intermediate Student';
+}
 
-name({ String? name , String? lastName , int? age }){
+class ApiData {
+  String name = 'Muhammad Ammar';
+  String education = "Intermediate Student";
+  int age  = 17;
+}
+
+
+// name({ String? name , String? lastName , int? age }){
    
-   String info = name ?? 'Not found';
-   String last = lastName ?? 'Not found';
-    dynamic userAge  = age ?? 'Not given' ;
+//    String info = name ?? 'Not found';
+//    String last = lastName ?? 'Not found';
+//     dynamic userAge  = age ?? 'Not given' ;
 
-    return (info , last , userAge);
-}
+//     return (info , last , userAge);
+// }
 
 
 // marksheet( {double? obtain , double total = 150}){
@@ -255,3 +280,6 @@ name({ String? name , String? lastName , int? age }){
 //    double percent = (obtain / total)*100 ;
 //    return percent; 
 // }
+
+
+
