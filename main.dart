@@ -1,6 +1,5 @@
-import 'dart:io';
-
- void  main(){
+// import 'dart:io';
+void  main(){
 
 
 // *****List Method Revision  (4-21-2024)******
@@ -238,28 +237,90 @@ import 'dart:io';
 
 
   // *******OOP**********
-  var userInfo = user();
-  print(userInfo.name);
-  print(userInfo.lastName);
+//   var userInfo = user();
+//   print(userInfo.name);
+//   print(userInfo.lastName);
 
- ApiData api = ApiData();
- print(api.name);
+//  ApiData api = ApiData();
+//  print(api.name);
+
+// teachers teacher1 = teachers('Muhammad Usman', 17);
+// teachers teacher2 = teachers('Muhammad Ayaan', 17);
+// teachers teacher3 = teachers('Muhammad Ammar', 17);
+//  print(teacher1.name);
+//  print(teacher1.age);
+//  print(teacher2.name);
+//  print(teacher2.age);
+//  print(teacher3.name);
+//  print(teacher3.age);
+
+  // *********Remaing***********
+  // Car car1 = Car('cultus' , 2007);
+  // print(car1.model);
+
 
 }
 
 // ************OOP************
-class user{
-   var name  = 'Muhammad Usman';
-   var lastName = 'khan';
-   var age = 17;
-   var education = 'Intermediate Student';
-}
 
-class ApiData {
-  String name = 'Muhammad Ammar';
-  String education = "Intermediate Student";
-  int age  = 17;
-}
+
+
+// -------------Remaining-----------------
+// class Car extends Cultus {
+//   Car(String name ,  int model){
+    
+// }
+
+
+// class Cultus{
+//   String name  = '';
+//   int model = 0;
+
+//    Cultus(String name , int model){
+//      this.name = name;
+//      this.model = model;     
+//    }
+// }
+
+// class wagonr{
+//     String color = '';
+//     String numberPlate = '';
+
+//    wagonr(String color, String numberPlate){
+//        this.color = color;
+//        this.numberPlate = numberPlate;
+//    } 
+  
+// }
+
+
+
+
+
+// class teachers {
+//   String name  = '';
+//   int age = 0;
+
+//   teachers(String name , int age){
+//        this.name = name ;
+//        this.age =age;
+//   }
+// }
+
+
+
+// class user{
+//    var name  = 'Muhammad Usman';
+//    var lastName = 'khan';
+//    var age = 17;
+//    var education = 'Intermediate Student';
+// }
+
+// class ApiData {
+//   String name = 'Muhammad Ammar';
+//   String education = "Intermediate Student";
+//   int age  = 17;
+// }
 
 
 // name({ String? name , String? lastName , int? age }){
