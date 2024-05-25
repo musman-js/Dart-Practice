@@ -1,5 +1,8 @@
 // import 'dart:io';
-void  main(){
+// import 'bankDetails.dart';
+
+void main() {
+
 
 
 // *****List Method Revision  (4-21-2024)******
@@ -13,7 +16,6 @@ void  main(){
 // print(number);
 // print(names);
 
-
 // Map name = {
 //   "name": "Muhammad Usman Khan",
 //   "age": 17,
@@ -24,12 +26,9 @@ void  main(){
 // name.putIfAbsent("love", ()=> "Money");
 // print(name);
 
-
-
 // for(var i = 1; i<=10 ; i++){
 //   print("2 x ${i} = ${2*i}");
 // }
-
 
 // ====For in Loop===
 // List names = [
@@ -49,7 +48,6 @@ void  main(){
 //   print(i["name"]);
 // }
 
-
 //List Methods Pracitce
 // List city = ["Karachi","islamabad","lahore",'peshawar'];
 // print(city.length);
@@ -58,7 +56,6 @@ void  main(){
 // print(city.last);
 // print(city.remove(city[0]));
 // print(city.removeAt(1));
-
 
 // int age = 10;
 // List cities = ["Karachi","Islamabad","Lahore"];
@@ -72,7 +69,6 @@ void  main(){
 // else{
 //   print("Jana cancel!");
 // }
-
 
 //Map Practice
 // Map name = {
@@ -89,9 +85,6 @@ void  main(){
 // print(name.keys);
 // print(name.length);
 // print(name["age"]);
-
-
-
 
   // num percent = 56;
   // if(percent >=80 && percent<=100){
@@ -113,7 +106,6 @@ void  main(){
   //   print("Invalid");
   // }
 
-
   // int age = 17;
   // if(age >=18){
   //   print("License ban Jayega");
@@ -122,20 +114,17 @@ void  main(){
   //   print('License nh banega');
   // }
 
-
   // double num4 = 234.3432;
   // int number = 344;
 
   // print(number);
   // print(num4);
 
-
   // for(var i = 0; i<=10; i++){
   //   print(i);
   // }
 
-
-  //Email Password 
+  //Email Password
   // var email  = "usman2037966@gmail.com";
   // var pass  = "abc123";
   // var userEmail = "usman2037966@gmail.com";
@@ -156,9 +145,6 @@ void  main(){
   //     print("Both Wrong");
   //   }
   // }
-
-
-
 
 // var usmanChoice = "Flutter & MERN Stack Developer";
 // int age = 17;
@@ -181,9 +167,6 @@ void  main(){
 // }
 // }
 
-
-
-
 // ***********A simple login code in which 5 times try are given to user***************
 // var name = "Muhammad Usman";
 // var pass = '12345';
@@ -196,9 +179,9 @@ void  main(){
 //   var userPass = stdin.readLineSync();
 //   print(' User Password : $userPass');
 //   i++;
-  
+
 //   if(userName == name && userPass == pass){
-//       print("Login"); 
+//       print("Login");
 //       break;
 //   }
 
@@ -207,34 +190,22 @@ void  main(){
 //   }
 // }
 
-
-
 // **********Null Safety practice************
 // var order = foodpanda(name: 'pizza');
 // print(order);
 
-
 // var userMarksheet = marksheet();
 // print(userMarksheet);
 
-
-
 // }
-
-
 
 // foodpanda({String? name}){
 //   print('Order dispatched');
 //   var orderName = name ?? 'no name is given';
 //   return orderName;
 
-
-
 //  var userData = name(name: 'Muhammad Usman' , lastName: 'Khan' ,age:17 );
 //  print(userData);
-
-
-
 
   // *******OOP**********
 //   var userInfo = user();
@@ -254,49 +225,89 @@ void  main(){
 //  print(teacher3.name);
 //  print(teacher3.age);
 
-  // *********Remaing***********
-  // Car car1 = Car('cultus' , 2007);
-  // print(car1.model);
+
+// =====================Pillars of OOP======================
+// *********Inheritance**********
+//   Student obj = Student();
+//   obj.displayStudent();
+//   obj.name = "Muhammad Usman";
+//   obj.age = 17;
+//   obj.display();
+
+
+
+// *********Polymorphism**********
+// Student obj = Student();
+//   obj.name = "Muhammad Usman";
+//   obj.age = 17;
+//   obj.display();
+
+
+
+// *********Encapsulation**********
+  // Person obj = Person();
+  //  Person.name;
+  //  Person.display();
+
 
 
 }
 
-// ************OOP************
+
+// ======Encapsulation======
+//Encapsulation file level hota he mtlb jb aik hi file me hoto access krlega or agr dosri file me ho to access nh hoga!
+
+// class Student extends Person {}
 
 
+// =======Polymorphism======
+// class Person {
+//   String? name;
+//   int? age;
 
-// -------------Remaining-----------------
-// class Car extends Cultus {
-//   Car(String name ,  int model){
-    
+//   display(){
+//     print('Name : $name');
+//     print('Age : $age');
+//   }
 // }
 
-
-// class Cultus{
-//   String name  = '';
-//   int model = 0;
-
-//    Cultus(String name , int model){
-//      this.name = name;
-//      this.model = model;     
-//    }
-// }
-
-// class wagonr{
-//     String color = '';
-//     String numberPlate = '';
-
-//    wagonr(String color, String numberPlate){
-//        this.color = color;
-//        this.numberPlate = numberPlate;
-//    } 
+// class Student extends Person {
+//   @override
+//   String? get name => super.name;
   
+//   @override
+//   display() {
+//     print("Student me override  hogai $name");
+//     super.display();
+//   }
+// }
+// class Teacher{}
+
+
+
+// =======Inheritance======
+// class Person {
+//   String? name;
+//   int? age;
+
+//   display(){
+//     print('Name : $name');
+//     print('Age : $age');
+//   }
+// }
+
+// class Student extends Person {
+  
+//   displayStudent(){
+//     print('Student ki class call hogai');
+//   }
 // }
 
 
+// class Teacher {}
 
 
-
+// ************OOP************
 // class teachers {
 //   String name  = '';
 //   int age = 0;
@@ -306,8 +317,6 @@ void  main(){
 //        this.age =age;
 //   }
 // }
-
-
 
 // class user{
 //    var name  = 'Muhammad Usman';
@@ -322,9 +331,8 @@ void  main(){
 //   int age  = 17;
 // }
 
-
 // name({ String? name , String? lastName , int? age }){
-   
+
 //    String info = name ?? 'Not found';
 //    String last = lastName ?? 'Not found';
 //     dynamic userAge  = age ?? 'Not given' ;
@@ -332,15 +340,11 @@ void  main(){
 //     return (info , last , userAge);
 // }
 
-
 // marksheet( {double? obtain , double total = 150}){
 //   if(obtain == null || total == 0){
 //     print("Error");
 //     return 0.0;
 //   }
 //    double percent = (obtain / total)*100 ;
-//    return percent; 
+//    return percent;
 // }
-
-
-
